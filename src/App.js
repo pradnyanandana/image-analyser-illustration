@@ -9,6 +9,7 @@ import {
   Cpu,
   Target,
 } from "lucide-react";
+import "./App.css";
 
 const CarDetectionVisualization = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -80,7 +81,7 @@ const CarDetectionVisualization = () => {
         highlight ? "border-yellow-400 shadow-lg" : "border-gray-300"
       } bg-gray-800 rounded-lg transition-all duration-500`}
     >
-      <div className="absolute -top-6 left-0 text-xs font-bold text-gray-600">
+      <div className="absolute -top-10 left-0 text-xs font-bold text-gray-600">
         {label}
       </div>
       <div
