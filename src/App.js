@@ -115,10 +115,10 @@ const CarDetectionVisualization = () => {
 
   const PlateBox = ({ x, y, width, height }) => (
     <div
-      className="absolute border-2 border-red-500 bg-red-500 bg-opacity-20 rounded"
+      className="absolute border-2 border-yellow-500 bg-yellow-500 bg-opacity-20 rounded"
       style={{ left: x, top: y, width, height }}
     >
-      <div className="absolute -top-5 left-0 text-xs bg-red-500 text-white px-1 rounded">
+      <div className="absolute -top-5 left-0 text-xs bg-yellow-500 text-white px-1 rounded">
         PLATE
       </div>
     </div>
@@ -519,7 +519,7 @@ const CarDetectionVisualization = () => {
               {currentStep === 6 &&
                 "The trickiest part! The system converts coordinates from the AI's 640x640 space back through all the transformations to the original video coordinates."}
               {currentStep === 7 &&
-                "Finally, the system draws colored boxes around detected cars (green) and license plates (red) on the original video display."}
+                "Finally, the system draws colored boxes around detected cars (green) and license plates (yellow) on the original video display."}
             </div>
           </div>
           <div>
